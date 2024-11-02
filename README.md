@@ -25,6 +25,14 @@ We utilized an LSTM model for both currency pairs. The architecture includes:
 
 The same model architecture was used for both currency pairs to ensure a fair comparison.
 
+###  GBP/USD VS RUB/USD model trend of Actual vs. Predicted Closing Prices in Financial Forecasting
+
+GBP/USD
+![GBP Model trend](https://github.com/user-attachments/assets/54fe27b3-f635-45b7-bb12-5eb4cfbbdbe1)
+
+RUB/USD
+![RUB Model trend](https://github.com/user-attachments/assets/cc4e569e-3523-4e23-8c37-0bbe8cd16e2e)
+
 ## Data Preprocessing
 - **Normalization**: The data was scaled between 0 and 1 using Min-Max normalization to facilitate LSTM training.
 - **Windowing**: A lookback window of 60 days was applied to create sequences of historical prices to predict the next day's closing price.
@@ -54,6 +62,14 @@ To evaluate and compare the performance of the LSTM models, the following metric
 
 - **Predicted vs Actual Prices**: We plotted the predicted and actual closing prices for both GBP/USD and RUB/USD. These plots give a clear indication of how well each model tracked the actual trends of the respective currencies.
 - **Percentage Error**: We calculated the percentage error for each time step to compare how close the predictions were to the actual values across both currency pairs. The percentage error was visualized on a graph for easy comparison.
+
+### Visualizing Actual vs. Predicted Closing Prices for the unseen Test Set 
+
+GBP/USD
+![new_text set GBP model viz](https://github.com/user-attachments/assets/87259af1-5f0b-496a-9b05-71bdaf46ff37)
+
+RUB/USD
+![new_text set RUB model viz](https://github.com/user-attachments/assets/f70955a6-2e91-470b-8866-61023b22893b)
 
 ### 3. Results Summary
 Based on the performance metrics, we can observe that the LSTM model performed better on **[currency pair]**, as indicated by its lower MAE, MSE, and higher R² score. The visual comparison also shows that the predictions for **[currency pair]** tracked more closely with the actual prices, while the predictions for **[the other currency pair]** had a larger deviation. The percentage error comparison further highlights the differences in model performance, with **[currency pair]** generally exhibiting lower prediction errors.
